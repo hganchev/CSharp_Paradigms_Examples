@@ -21,6 +21,16 @@ namespace app
             OOP.Daisy myDaisy = new OOP.Daisy(); // example of instantiation chiled class
             Console.WriteLine(myDaisy.Color);
             myDaisy.AddWater();
+
+            OOP.RoadBike myBike = new OOP.RoadBike(); // example of instantiation chiled class
+            myBike.GetWeight();
+
+            OOP.Magnolia myMagnolia = new OOP.Magnolia(); // example of instantiation chiled class
+            myMagnolia.AddWater();
+            myMagnolia.LeafsCount();
+
+            OOP.WaterLevel myVar = OOP.WaterLevel.Medium; // You can access enum with dot syntax
+            Console.WriteLine(myVar);
         }
     }
 }

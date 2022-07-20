@@ -99,6 +99,50 @@ namespace app.OOP
     //     The abstract keyword is used for classes and methods:
     //     Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
     //     Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the derived class (inherited from).
+    abstract class Bike
+    {
+        public abstract void GetWeight(); // abstract method
+    }
+    class RoadBike : Bike
+    {
+        public override void GetWeight()
+        {
+            Console.WriteLine("The RoadBike weight is from 4 to 10kg");
+        }
+    }
+
+    // Interfaces
+    // Another way to achieve abstraction in C#, is with interfaces.
+    // An interface is a completely "abstract class", which can only contain abstract methods and properties (with empty bodies):
+
+    interface IFlower
+    {
+        void AddWater(); // interface method (does not have a body)
+        void LeafsCount(); // interface method (does not have a body)
+    }
+
+    class Magnolia : IFlower
+    {
+        public void AddWater()
+        {
+            Console.WriteLine("adding 300 ml of water");
+        }
+
+        public void LeafsCount()
+        {
+            Console.WriteLine("it has 9 leafs");
+        }
+    }
+
+    // C# Enums
+    // An enum is a special "class" that represents a group of constants (unchangeable/read-only variables).
+    // To create an enum, use the enum keyword (instead of class or interface), and separate the enum items with a comma:
+    enum WaterLevel
+    {
+        Low,
+        Medium,
+        High
+    }
 }
 
      
