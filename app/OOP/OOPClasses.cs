@@ -17,10 +17,7 @@ namespace app.OOP
         }
 
         // Properties and Encapsulation
-        //     Before we start to explain properties, you should have a basic understanding of "Encapsulation".
-
         //     The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To achieve this, you must:
-
         //     declare fields/variables as private
         //     provide public get and set methods, through properties, to access and update the value of a private field
         private string color = "yellow"; // field of a class
@@ -52,7 +49,6 @@ namespace app.OOP
 
     // Inheritance (Derived and Base Class)
         //     In C#, it is possible to inherit fields and methods from one class to another. We group the "inheritance concept" into two categories:
-
         //     Derived Class (child) - the class that inherits from another class
         //     Base Class (parent) - the class being inherited from
         //     To inherit from a class, use the : symbol.
