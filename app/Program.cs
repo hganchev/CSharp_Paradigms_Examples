@@ -38,6 +38,10 @@ namespace app
             #region Functional Examples
             var myFunc = new Functional.Functions();
             #endregion
+            // ========================= Functional Programming examples =======================================
+            #region Procediral Examples
+            var myProcedure = new Imperative.Procedural();
+            #endregion
         }
     }
 }
