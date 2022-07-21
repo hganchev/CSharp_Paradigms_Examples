@@ -51,6 +51,11 @@ namespace app
             myPub.OnEvent();
 
             #endregion
+
+             // ========================= Structured Programming examples =======================================
+            #region Structured Examples
+            var myStruct = new Structured.Structures();
+            #endregion
         }
     }
 }
