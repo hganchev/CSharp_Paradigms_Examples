@@ -38,9 +38,18 @@ namespace app
             #region Functional Examples
             var myFunc = new Functional.Functions();
             #endregion
-            // ========================= Functional Programming examples =======================================
+            // ========================= Procedural Programming examples =======================================
             #region Procediral Examples
             var myProcedure = new Imperative.Procedural();
+            #endregion
+            // ========================= Event driven Programming examples =======================================
+            #region Event-Driven Examples
+            var myPub = new EventDriven.Publisher();
+            var mySub = new EventDriven.Subscriber();
+
+            mySub.Subscribe(myPub);
+            myPub.OnEvent();
+
             #endregion
         }
     }
